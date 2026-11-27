@@ -127,7 +127,6 @@ public class GameEngine {
 
         int[] scoreState = new int[]{handType.getBaseChips() + cardChips, handType.getBaseMult()};
 
-        // Polimorfikus Joker hatások alkalmazása
         for (Joker joker : activeJokers) {
             joker.applyEffect(selected, scoreState);
         }
