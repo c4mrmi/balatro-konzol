@@ -17,8 +17,7 @@ public abstract class Joker implements Serializable {
     public String getName() { return name; }
     public String getDescription() { return description; }
     public int getCost() { return cost; }
-a
-    // Polimorfikus metódus: minden Joker máshogy módosítja a pontszámot [chips, mult]
+
     public abstract void applyEffect(List<Card> playedCards, int[] scoreState);
 
     @Override
